@@ -15,4 +15,4 @@ Ce site a été développé en utilisant les technologies suivantes :
 * JavaScript
 
 ## Auteur
-Cette interface a été créée par JUSTAFRE Caroline.
+Ce site a été créé par JUSTAFRE Caroline.

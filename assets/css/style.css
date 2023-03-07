@@ -1,0 +1,115 @@
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+/* DEFAULT CSS */
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh ;
+}
+
+img{
+    width: 50px;
+    height: auto;
+}
+
+/* HEADER CSS */
+header{
+    margin: 1em auto;
+}
+
+/* MAIN CSS */
+main{
+    flex-grow: 2;
+}
+p{
+    text-align: center;
+}
+
+/* FOOTER CSS */
+footer{
+    margin: 2em auto 1em;
+}
+
+/* TITLE CSS */
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em !important;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+h2 span:last-child{
+    margin-right: 1em;
+}
+
+/* CSS MEDIA QUERIES */
+@media screen and (max-width: 425px){
+    /* CSS DEFAULT */
+    img{
+        width: 150px;
+        margin-bottom: 1em;
+    }
+
+    /* CSS FOOTER */
+    footer{
+        font-size: 0.8em;
+    }
+
+    /* CSS TITLE */
+    h1{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 1em !important;
+        margin-top: 1.5em !important;
+    }
+    
+}
+
+@media screen and (max-width: 345px) {
+    /* CSS DEFAULT */
+    button{
+        font-size: 0.8em !important;
+    }
+
+    /* CSS FOOTER */
+    footer{
+        font-size: 0.5em;
+    }
+
+    /* CSS TITLE */
+    h1{
+        font-size: 2.5em !important;
+    }
+}
+
+@media screen and (max-width: 281px){
+    /* DEFAULT CSS */
+    img{
+        width: 100px;
+    }
+
+    /* CSS TITLE */
+    h1{
+        font-size: 1.8em !important;
+    }
+    h2{
+        font-size: 0.8em !important;
+        margin-bottom: 0.5em !important;
+    }
+}

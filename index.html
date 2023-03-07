@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamlight Valley</title>
+
+    <!-- Liens vers les fichiers CSS -->
+    <link rel="stylesheet" href="assets/css/smallreset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CDN BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Icône de la page -->
+    <link rel="icon" type="image/png" href="assets/img/disney.png" alt="Logo de la page">
+
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Dialogue, quotidien, Dreamlight, Valley, Disney">
+    <meta name="description" content="To Do List pour cocher les dialogues quotidiens sur le jeu Dreamlight Valley">
+    <meta property="og:title" content="To Do List DreamLight Valley">
+    <meta property="og:description" content="To Do List pour cocher les dialogues quotidiens sur le jeu Dreamlight Valley">
+    <meta property="og:image" content="assets/img/disney.png">
+    <meta property="og:type" content="text/html">
+    <meta property="og:locale" content="fr_FR">
+    <link rel="canonical" href="https://caroline-jtf.github.io/To_Do_List_DreamLight_Valley/">
+</head>
+<body>
+
+    <!-- ********** HEADER ********** -->
+    <header>
+        <h1>
+            DreamLight Valley
+            <img src="assets/img/disney.png" alt="">
+        </h1>
+        <h2>Check List Dialogue Quotidien</h2>
+    </header>
+
+    <!-- ********** MAIN ********** -->
+    <main class="container">
+
+        <p>
+            Discussion quotidienne : 
+            <span id="allChecked">0</span> / 
+            <span id="total"></span>
+        </p>
+
+        <button id="clear" class="btn btn-light d-flex m-auto mb-2">
+            Réinitialiser
+        </button>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <!-- Merlin l'enchanteur -->
+            <div class="accordion-item" id="da_merlin">
+
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <div class="text-center">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Merlin l'enchanteur
+                    </button>
+                </h2>
+
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Merlin" id="merlin">
+                            <label class="form-check-label" for="merlin">
+                                Merlin
+                            </label>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Wall-E -->
+            <div class="accordion-item" id="da_walle">
+
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Wall-E
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="WallE" id="walle">
+                            <label class="form-check-label" for="walle">
+                                Wall-E
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Lilo & Stitch -->
+            <div class="accordion-item" id="da_lilo_stitch">
+
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Lilo & Stitch
+                    </button>
+                </h2>
+
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Stitch" id="stitch">
+                            <label class="form-check-label" for="stitch">
+                                Stitch
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Vaiana -->
+            <div class="accordion-item" id="da_vaiana">
+
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Vaiana
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Maui" id="maui">
+                            <label class="form-check-label" for="maui">
+                                Maui
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Vaiana" id="vaiana">
+                            <label class="form-check-label" for="vaiana">
+                                Vaiana
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ratatouille -->
+            <div class="accordion-item" id="da_ratatouille">
+
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Ratatouille
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Remy" id="remy">
+                            <label class="form-check-label" for="remy">
+                                Rémy
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Le roi lion -->
+            <div class="accordion-item" id="da_roi_lion">
+
+                <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Le roi lion
+                    </button>
+                </h2>
+
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Scar" id="scar">
+                            <label class="form-check-label" for="scar">
+                                Scar
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- La petite sirène -->
+            <div class="accordion-item" id="da_petite_sirene">
+
+                <h2 class="accordion-header" id="flush-headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        La petite sirène
+                    </button>
+                </h2>
+
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Ariel" id="ariel">
+                            <label class="form-check-label" for="ariel">
+                                Ariel
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Eric" id="eric">
+                            <label class="form-check-label" for="eric">
+                                Le prince Eric
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Ursula" id="ursula">
+                            <label class="form-check-label" for="ursula">
+                                Ursula
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- La reine des neiges -->
+            <div class="accordion-item" id="da_reine_neige">
+                
+                <h2 class="accordion-header" id="flush-headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        La reine des neiges
+                    </button>
+                </h2>
+
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Anna" id="anna">
+                            <label class="form-check-label" for="anna">
+                                Anna
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Elsa" id="elsa">
+                            <label class="form-check-label" for="elsa">
+                                Elsa
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Kristoff" id="kristoff">
+                            <label class="form-check-label" for="kristoff">
+                                Kristoff
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Olaf" id="olaf">
+                            <label class="form-check-label" for="olaf">
+                                Olaf
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Raiponce -->
+            <div class="accordion-item" id="da_raiponce">
+                
+                <h2 class="accordion-header" id="flush-headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Raiponce
+                    </button>
+                </h2>
+
+                <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Gothel" id="gothel">
+                            <label class="form-check-label" for="gothel">
+                                Mère Gothel
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mickey et ses amis -->
+            <div class="accordion-item" id="da_mickey_amis">
+
+                <h2 class="accordion-header" id="flush-headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Mickey et ses amis
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Dingo" id="dingo">
+                            <label class="form-check-label" for="dingo">
+                                Dingo
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Donald" id="donald">
+                            <label class="form-check-label" for="donald">
+                                Donald
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Mickey" id="mickey">
+                            <label class="form-check-label" for="mickey">
+                                Mickey
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Minnie" id="minnie">
+                            <label class="form-check-label" for="minnie">
+                                Minnie
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Picsou" id="picsou">
+                            <label class="form-check-label" for="picsou">
+                                Picsou
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Toy Story -->
+            <div class="accordion-item" id="da_toy_story">
+
+                <h2 class="accordion-header" id="flush-headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Toy Story
+                    </button>
+                </h2>
+
+                <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Buzz" id="buzz">
+                            <label class="form-check-label" for="buzz">
+                                Buzz l'éclair
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Woody" id="woody">
+                            <label class="form-check-label" for="woody">
+                                Woody
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Encanto -->
+            <div class="accordion-item" id="da_encanto">
+
+                <h2 class="accordion-header" id="flush-headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                        <div class="count">
+                            <span class="checked">0</span> / 
+                            <span class="subtotal"></span>    
+                        </div>
+                        Encanto
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Mirabel" id="mirabel">
+                            <label class="form-check-label" for="mirabel">
+                                Mirabel
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </main>
+
+    <!-- ********** FOOTER ********** -->
+    <footer>
+        <p><span id="copyright"></span> &copy To Do List DreamLight Valley By JUSTAFRE Caroline</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- CDN Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

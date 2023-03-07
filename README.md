@@ -5,7 +5,7 @@ Ce site est conçu pour cocher les discussions quotidiennes entre les divers per
 1. Affiche les discussions quotidiennes sous forme de liste
 2. Permet de cocher les discussions déjà complétées
 3. Garde en mémoire les discussions cochées même après la fermeture de la page
-4. Réinitialise les compteurs à zéro à minuit
+4. Bouton permettant de réinitialliser les compteurs
 
 ## Technologies utilisées
 Ce site a été développé en utilisant les technologies suivantes :
